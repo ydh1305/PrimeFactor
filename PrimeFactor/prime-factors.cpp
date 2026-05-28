@@ -20,9 +20,10 @@ public:
 					number /= divisor;
 				}
 
-				while (number % 3 == 0) {
-					result.push_back(3);
-					number /= 3;
+				divisor++;
+				while (number % divisor == 0) {
+					result.push_back(divisor);
+					number /= divisor;
 				}
 			}
 			else
